@@ -1,11 +1,11 @@
 {
   "kind": "Workflow",
-  "id": "33fb64086c3295748ed979a87b3541c7",
+  "id": "33fb64086c3295748ed979a87b54da3b",
   "isDeleted": false,
-  "rev": "16-abbe5c5685a9f03c7dd68971901dbe6e",
+  "rev": "56-5d5b2428fc8ec34b9da857751413bd9d",
   "description": "Determines if there is a significant difference between the means of two groups.",
-  "name": "ttest_app",
-  "createdBy": "alex",
+  "name": "ttest_app_generic",
+  "createdBy": "faris",
   "acl": {
     "kind": "Acl",
     "owner": "pamgene",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-09-20T14:11:35.080863Z"
+    "value": "2021-09-20T16:51:39.891851Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2021-09-20T15:11:28.751232Z"
+    "value": "2021-10-14T13:12:28.872846Z"
   },
   "urls": [
     {
@@ -42,7 +42,7 @@
     "kind": "Url",
     "uri": "https://github.com/tercen/ttest_app"
   },
-  "version": "0.0.1",
+  "version": "0.1.0",
   "authors": [],
   "isPublic": false,
   "projectId": "33fb64086c3295748ed979a87b34b3b7",
@@ -92,7 +92,7 @@
     },
     {
       "kind": "Link",
-      "id": "4b2e67b1-ae9e-4ebd-80ff-9e6b0cefe428",
+      "id": "418ccc9e-639f-4f93-9054-bc7a539bc633",
       "inputId": "4d6be273-e53d-48ee-876a-35975ede03fa-i-0",
       "outputId": "1920b6d3-217a-47ad-a9f2-4be40bcff920-o-0"
     }
@@ -123,13 +123,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 94.70703125,
+          "x": 105.927734375,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
           "x": 538.5050000000001,
-          "y": 95.5
+          "y": 96.5
         }
       },
       "state": {
@@ -162,7 +162,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "group",
+                    "name": "Group",
                     "type": "string"
                   }
                 ],
@@ -201,7 +201,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "group",
+                    "name": "Group",
                     "type": "string"
                   },
                   "rectangle": {
@@ -235,7 +235,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "measurement",
+                    "name": "Measurement",
                     "type": "double"
                   },
                   "rectangle": {
@@ -259,14 +259,14 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 221.0,
+          "cellSize": 250.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "supergroup",
+                "name": "Supergroup",
                 "type": "string"
               },
               "rectangle": {
@@ -297,8 +297,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "t-Test - Two Group",
-            "version": "dacf8d0ccdbea461c158beeb0c46bb623f182d2e",
-            "operatorId": "33fb64086c3295748ed979a87b34c2e0",
+            "version": "0.0.2",
+            "operatorId": "32686b39f178f64eef1bbd384424d285",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -342,14 +342,14 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 173.0,
+          "cellSize": 41.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "variable",
+                "name": "Variable",
                 "type": "string"
               },
               "rectangle": {
@@ -373,7 +373,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "428b1e0d-c3d2-45a5-8edf-5d31c9227187"
+        "id": "6281184a-aac6-4498-8686-5d14433aea7d"
       }
     },
     {
@@ -401,13 +401,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 176.09375,
+          "x": 196.6953125,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 496.5050000000001,
-          "y": 196.5
+          "x": 493.5050000000001,
+          "y": 202.5
         }
       },
       "state": {
@@ -440,7 +440,7 @@
                 "factors": [
                   {
                     "kind": "Factor",
-                    "name": "supergroup",
+                    "name": "Supergroup",
                     "type": "string"
                   }
                 ],
@@ -513,7 +513,7 @@
                   "kind": "GraphicalFactor",
                   "factor": {
                     "kind": "Factor",
-                    "name": "measurement",
+                    "name": "Measurement",
                     "type": "double"
                   },
                   "rectangle": {
@@ -537,14 +537,14 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 67.0,
+          "cellSize": 123.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "supergroup",
+                "name": "Supergroup",
                 "type": "string"
               },
               "rectangle": {
@@ -565,7 +565,7 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "group",
+                "name": "Group",
                 "type": "string"
               },
               "rectangle": {
@@ -586,7 +586,7 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "observation",
+                "name": "Pair",
                 "type": "string"
               },
               "rectangle": {
@@ -617,8 +617,8 @@
           "operatorRef": {
             "kind": "OperatorRef",
             "name": "Z-score scaling",
-            "version": "6b98da2370d395045c648d45127ce47a5f892b5b",
-            "operatorId": "33fb64086c3295748ed979a87b34eb68",
+            "version": "0.0.2",
+            "operatorId": "32686b39f178f64eef1bbd384414ba17",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -629,21 +629,21 @@
             ],
             "url": {
               "kind": "Url",
-              "uri": "https://github.com/tercen/two_sample_ttest_operator"
+              "uri": "https://github.com/tercen/zscore_scaling_operator"
             }
           },
           "environment": []
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 55.0,
+          "cellSize": 47.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "variable",
+                "name": "Variable",
                 "type": "string"
               },
               "rectangle": {
@@ -667,7 +667,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "bc63149e-9f22-4b61-8abd-31df3c6fdafd"
+        "id": "fcdd5128-e782-45b1-80f6-b417d8f7b8ce"
       }
     },
     {
@@ -695,13 +695,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 167.85546875,
+          "x": 191.744140625,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 502.0568750000002,
-          "y": 299.5
+          "x": 494.0568750000002,
+          "y": 301.5
         }
       },
       "state": {
@@ -746,12 +746,12 @@
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "NaN"
+                      "stringValue": "-2.540032118026122"
                     },
                     {
                       "kind": "DoubleColorElement",
                       "color": -1,
-                      "stringValue": "NaN"
+                      "stringValue": "2.5499994389120384"
                     }
                   ]
                 }
@@ -838,21 +838,21 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 80.89600000000003,
+          "cellSize": 147.66666666666666,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "supergroup",
+                "name": "Supergroup",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 0.0,
+                  "x": 100.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -866,7 +866,7 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "group",
+                "name": "Group",
                 "type": "string"
               },
               "rectangle": {
@@ -887,14 +887,14 @@
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "observation",
+                "name": "Pair",
                 "type": "string"
               },
               "rectangle": {
                 "kind": "Rectangle",
                 "extent": {
                   "kind": "Point",
-                  "x": 110.0,
+                  "x": 40.0,
                   "y": 30.0
                 },
                 "topLeft": {
@@ -950,14 +950,14 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 55.80800000000001,
+          "cellSize": 92.16666666666667,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "variable",
+                "name": "Variable",
                 "type": "string"
               },
               "rectangle": {
@@ -981,7 +981,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "99783944-5a93-4fe2-9560-f009458a4452"
+        "id": "43e31606-1d4f-43dc-9828-a83db8449b66"
       }
     },
     {
@@ -1009,7 +1009,7 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 88.99000000000001,
+          "x": 93.6640625,
           "y": 55.0
         },
         "topLeft": {
@@ -1029,21 +1029,7 @@
         "kind": "Crosstab",
         "axis": {
           "kind": "XYAxisList",
-          "rectangleSelections": [
-            {
-              "kind": "Rectangle",
-              "extent": {
-                "kind": "Point",
-                "x": 0.0,
-                "y": 0.0
-              },
-              "topLeft": {
-                "kind": "Point",
-                "x": 0.0,
-                "y": 0.0
-              }
-            }
-          ],
+          "rectangleSelections": [],
           "xyAxis": [
             {
               "kind": "XYAxis",
@@ -1067,25 +1053,20 @@
                   }
                 ],
                 "palette": {
-                  "kind": "RampPalette",
+                  "kind": "JetPalette",
                   "backcolor": 0,
                   "properties": [],
-                  "isUserDefined": true,
+                  "isUserDefined": false,
                   "doubleColorElements": [
                     {
                       "kind": "DoubleColorElement",
-                      "color": 0,
-                      "stringValue": "0"
+                      "color": -1,
+                      "stringValue": "-0.45211921324400994"
                     },
                     {
                       "kind": "DoubleColorElement",
-                      "color": 16711680,
-                      "stringValue": "1.3"
-                    },
-                    {
-                      "kind": "DoubleColorElement",
-                      "color": 16711680,
-                      "stringValue": "10"
+                      "color": -1,
+                      "stringValue": "1.0765012147840227"
                     }
                   ]
                 }
@@ -1172,14 +1153,14 @@
         },
         "columnTable": {
           "kind": "CrosstabTable",
-          "cellSize": 270.5,
+          "cellSize": 250.0,
           "offset": 0,
           "graphicalFactors": [
             {
               "kind": "GraphicalFactor",
               "factor": {
                 "kind": "Factor",
-                "name": "supergroup",
+                "name": "Supergroup",
                 "type": "string"
               },
               "rectangle": {
@@ -1223,7 +1204,7 @@
         },
         "rowTable": {
           "kind": "CrosstabTable",
-          "cellSize": 373.0,
+          "cellSize": 560.0,
           "offset": 0,
           "graphicalFactors": [
             {
@@ -1254,7 +1235,7 @@
       },
       "computedRelation": {
         "kind": "Relation",
-        "id": "3d74d97b-6280-4c35-b081-58e8e2a803d7"
+        "id": "f9db049f-4b0a-421f-bfa6-a2e47f54a778"
       }
     },
     {
@@ -1280,7 +1261,7 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 352.367421875,
+          "x": 357.367421875,
           "y": 300.5
         }
       },
@@ -1315,8 +1296,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 541.4896093750003,
-          "y": 403.5
+          "x": 544.4896093750003,
+          "y": 418.5
         }
       },
       "state": {
@@ -1331,7 +1312,7 @@
       "kind": "WizardStep",
       "id": "1920b6d3-217a-47ad-a9f2-4be40bcff920",
       "groupId": "",
-      "name": "Wizard",
+      "name": "t-test Wizard",
       "inputs": [
         {
           "kind": "InputPort",
@@ -1352,13 +1333,13 @@
         "kind": "Rectangle",
         "extent": {
           "kind": "Point",
-          "x": 88.99000000000001,
+          "x": 96.822265625,
           "y": 55.0
         },
         "topLeft": {
           "kind": "Point",
-          "x": 541.5050000000001,
-          "y": 3.5
+          "x": 542.5050000000001,
+          "y": -7.5
         }
       },
       "state": {
@@ -1370,56 +1351,56 @@
       },
       "model": {
         "kind": "WizardStepModel",
-        "namespace": "ws0",
-        "description": "",
+        "namespace": "ttest",
+        "description": "Namespace prefixes all computed values.",
         "factors": [
           {
             "kind": "MappingFactor",
-            "name": "group",
-            "type": "string",
-            "isSingle": true,
-            "description": "",
-            "factorName": "group",
-            "factors": [],
-            "isRequired": true
-          },
-          {
-            "kind": "MappingFactor",
-            "name": "measurement",
+            "name": "Measurement",
             "type": "double",
             "isSingle": true,
             "description": "",
-            "factorName": "measurement",
+            "factorName": "Measurement",
             "factors": [],
             "isRequired": true
           },
           {
             "kind": "MappingFactor",
-            "name": "variable",
+            "name": "Group",
             "type": "string",
-            "isSingle": false,
+            "isSingle": true,
             "description": "",
-            "factorName": "variable",
+            "factorName": "Group",
             "factors": [],
             "isRequired": true
           },
           {
             "kind": "MappingFactor",
-            "name": "supergroup",
+            "name": "Variable",
             "type": "string",
             "isSingle": false,
             "description": "",
-            "factorName": "supergroup",
+            "factorName": "Variable",
             "factors": [],
             "isRequired": true
           },
           {
             "kind": "MappingFactor",
-            "name": "observation",
+            "name": "Supergroup",
             "type": "string",
             "isSingle": false,
             "description": "",
-            "factorName": "observation",
+            "factorName": "Supergroup",
+            "factors": [],
+            "isRequired": true
+          },
+          {
+            "kind": "MappingFactor",
+            "name": "Pair",
+            "type": "string",
+            "isSingle": false,
+            "description": "",
+            "factorName": "Pair",
             "factors": [],
             "isRequired": true
           }
@@ -1507,8 +1488,8 @@
         },
         "topLeft": {
           "kind": "Point",
-          "x": 541.5050000000001,
-          "y": -92.5
+          "x": 544.5050000000001,
+          "y": -111.5
         }
       },
       "state": {
@@ -1527,7 +1508,7 @@
   ],
   "offset": {
     "kind": "Point",
-    "x": -130.0,
-    "y": 130.0
+    "x": -128.0,
+    "y": 148.0
   }
 }
