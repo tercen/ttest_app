@@ -1529,7 +1529,7 @@
                 "type": "string"
               }
             ],
-            "isRequired": true
+            "isRequired": false
           },
           {
             "kind": "MappingFactor",
@@ -1613,7 +1613,7 @@
                 "type": "string"
               }
             ],
-            "isRequired": true
+            "isRequired": false
           },
           {
             "kind": "MappingFactor",
