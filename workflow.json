@@ -1,11 +1,11 @@
 {
   "kind": "Workflow",
-  "id": "33fb64086c3295748ed979a87b54da3b",
+  "id": "c845ceade32c4423bc616ff5ab47607f",
   "isDeleted": false,
-  "rev": "132-f9e22d478b155cbde1945b317f834168",
+  "rev": "5-08e5afbe66667d7adb0ed18706929dd9",
   "description": "Determines if there is a significant difference between the means of two groups.",
-  "name": "ttest_app",
-  "createdBy": "faris",
+  "name": "TTest_app",
+  "createdBy": "ginberg",
   "acl": {
     "kind": "Acl",
     "owner": "pamgene",
@@ -13,11 +13,11 @@
   },
   "createdDate": {
     "kind": "Date",
-    "value": "2021-09-20T16:51:39.891851Z"
+    "value": "2022-02-03T09:01:32.202963Z"
   },
   "lastModifiedDate": {
     "kind": "Date",
-    "value": "2022-01-18T09:26:57.043334Z"
+    "value": "2022-02-11T12:56:35.190429Z"
   },
   "urls": [
     {
@@ -36,16 +36,21 @@
       "kind": "Pair",
       "key": "copyOf",
       "value": "35c33fa33c9e6aba0dce6483f526958e"
+    },
+    {
+      "kind": "Pair",
+      "key": "readOnly",
+      "value": "true"
     }
   ],
   "url": {
     "kind": "Url",
     "uri": "https://github.com/tercen/ttest_app"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "authors": [],
   "isPublic": false,
-  "projectId": "33fb64086c3295748ed979a87b34b3b7",
+  "projectId": "c845ceade32c4423bc616ff5ab22f158",
   "folderId": "",
   "links": [
     {
@@ -299,7 +304,7 @@
             "kind": "OperatorRef",
             "name": "t-Test - Two Group",
             "version": "0.0.2",
-            "operatorId": "32686b39f178f64eef1bbd384424d285",
+            "operatorId": "c845ceade32c4423bc616ff5ab453499",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
@@ -621,7 +626,7 @@
             "kind": "OperatorRef",
             "name": "Z-score scaling",
             "version": "0.0.2",
-            "operatorId": "32686b39f178f64eef1bbd384414ba17",
+            "operatorId": "c845ceade32c4423bc616ff5ab45478d",
             "operatorKind": "ROperator",
             "propertyValues": [
               {
