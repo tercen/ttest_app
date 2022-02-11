@@ -36,11 +36,6 @@
       "kind": "Pair",
       "key": "copyOf",
       "value": "35c33fa33c9e6aba0dce6483f526958e"
-    },
-    {
-      "kind": "Pair",
-      "key": "readOnly",
-      "value": "true"
     }
   ],
   "url": {
